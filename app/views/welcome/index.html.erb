@@ -11,127 +11,17 @@
     </aside>
   </nav>
 
-  <section class="topicsSlider">
-    <section class="topic">
+  <%= render 'topics_slider' %>
 
-<pre><span class="name">(Sergey Zhigalov)</span> {
-  Three Man in a Boat.
-  To Say Nothing of the
-  Callback.
-} <span class="date">25 Aug 2015</span></pre>
-
-    </section>
-
-    <section class="topic">
-
-<pre><span class="name">(Sergey Zhigalov)</span> {
-  Three Man in a Boat.
-  To Say Nothing of the
-  Callback.
-} <span class="date">25 Aug 2015</span></pre>
-
-    </section>
-
-    <section class="topic">
-
-<pre><span class="name">(Sergey Zhigalov)</span> {
-  Three Man in a Boat.
-  To Say Nothing of the
-  Callback.
-} <span class="date">25 Aug 2015</span></pre>
-
-    </section>
-
-    <section class="topic">
-
-<pre><span class="name">(Sergey Zhigalov)</span> {
-  Three Man in a Boat.
-  To Say Nothing of the
-  Callback.
-} <span class="date">25 Aug 2015</span></pre>
-
-    </section>
-
-    <section class="topic">
-
-<pre><span class="name">(Sergey Zhigalov)</span> {
-  Three Man in a Boat.
-  To Say Nothing of the
-  Callback.
-} <span class="date">25 Aug 2015</span></pre>
-
-    </section>
-
-    <section class="topic">
-
-<pre><span class="name">(Sergey Zhigalov)</span> {
-  Three Man in a Boat.
-  To Say Nothing of the
-  Callback.
-} <span class="date">25 Aug 2015</span></pre>
-
-    </section>
-
-    <section class="topic">
-
-<pre><span class="name">(Sergey Zhigalov)</span> {
-  Three Man in a Boat.
-  To Say Nothing of the
-  Callback.
-} <span class="date">25 Aug 2015</span></pre>
-
-    </section>
-
-    <section class="topic">
-
-<pre><span class="name">(Sergey Zhigalov)</span> {
-  Three Man in a Boat.
-  To Say Nothing of the
-  Callback.
-} <span class="date">25 Aug 2015</span></pre>
-
-    </section>
-
-    <section class="topic">
-
-<pre><span class="name">(Sergey Zhigalov)</span> {
-  Three Man in a Boat.
-  To Say Nothing of the
-  Callback.
-} <span class="date">25 Aug 2015</span></pre>
-
-    </section>
-
-    <section class="topic">
-
-<pre><span class="name">(Sergey Zhigalov)</span> {
-  Three Man in a Boat.
-  To Say Nothing of the
-  Callback.
-} <span class="date">25 Aug 2015</span></pre>
-
-    </section>
-
-    <section class="topic">
-
-<pre><span class="name">(Sergey Zhigalov)</span> {
-  Three Man in a Boat.
-  To Say Nothing of the
-  Callback.
-} <span class="date">25 Aug 2015</span></pre>
-
-    </section>
-
-    <section class="topic">
-
-<pre><span class="name">(Sergey Zhigalov)</span> {
-  Three Man in a Boat.
-  To Say Nothing of the
-  Callback.
-} <span class="date">25 Aug 2015</span></pre>
-
-    </section>
-  </section>
+  <footer id="circlesWrapper">
+    <div class="current" id="slide1"></div>
+    <div id="slide2"></div>
+    <div id="slide3"></div>
+    <div id="slide4"></div>
+    <div id="slide5"></div>
+    <div id="slide6"></div>
+    <div id="slide7"></div>
+  </footer>
 
 </section>
 
@@ -156,7 +46,7 @@ Follow us on <a href="https://www.facebook.com/frontendunion">Facebook</a> and <
 
   <ul>
     <li>
-      <div></div>
+      <div style="background-image: url(<%= image_path('speakers/Varvara-Stepanova.jpg') %>);"></div>
       <h3>Styleguide First — a New Approach to UI Component Development.</h3>
       <p class="speaker">Varvara Stepanova</p>
       <p class="from"><a href="https://twitter.com/toivonens">@toivonens</a>, HelsinkiJS</p>
@@ -165,7 +55,7 @@ Follow us on <a href="https://www.facebook.com/frontendunion">Facebook</a> and <
 
 
     <li>
-      <div></div>
+      <div style="background-image: url(<%= image_path('speakers/Mikhail-Larchenko.jpg') %>);"></div>
       <h3>Testing Isomorphic React Apps.</h3>
       <p class="speaker">Mikhail Larchenko</p>
       <p class="from"><a href="https://twitter.com/MLarchanka">@MLarchanka</a>, WebNotBombs</p>
@@ -173,7 +63,7 @@ Follow us on <a href="https://www.facebook.com/frontendunion">Facebook</a> and <
     </li>
 
     <li>
-      <div></div>
+      <div style="background-image: url(<%= image_path('speakers/Zarema-Khalilova.jpg') %>);"></div>
       <h3>Goodbye, jQuery!</h3>
       <p class="speaker">Zarema Khalilova</p>
       <p class="from">SPB Frontend</p>
@@ -182,7 +72,7 @@ Follow us on <a href="https://www.facebook.com/frontendunion">Facebook</a> and <
     </li>
 
     <li>
-      <div></div>
+      <div style="background-image: url(<%= image_path('speakers/Vladimir-Dashukevich.jpg') %>);"></div>
       <h3>XSS Wars. The Force Awakens.</h3>
       <p class="speaker">Vladimir Dashukevich</p>
       <p class="from"><a href="https://twitter.com/life__777">@life__777</a>, front</p>
@@ -190,7 +80,7 @@ Follow us on <a href="https://www.facebook.com/frontendunion">Facebook</a> and <
     </li>
 
     <li>
-      <div></div>
+      <div style="background-image: url(<%= image_path('speakers/Marina-Mironovich.jpg') %>);"></div>
       <h3>Three Stories About Testing.</h3>
       <p class="speaker">Marina Mironovich</p>
       <p class="from"><a href="https://twitter.com/obnoxious_mari">@obnoxious_mari</a>, WebNotBombs</p>
@@ -198,7 +88,7 @@ Follow us on <a href="https://www.facebook.com/frontendunion">Facebook</a> and <
     </li>
 
     <li>
-      <div></div>
+      <div style="background-image: url(<%= image_path('speakers/Jan-Monschke.jpg') %>);"></div>
       <h3>Create Collaborative Applications Using Diffsync.</h3>
       <p class="speaker">Jan Monschke</p>
       <p class="from"><a href="https://twitter.com/thedeftone">@thedeftone</a>, BerlinJS</p>
@@ -207,7 +97,7 @@ Follow us on <a href="https://www.facebook.com/frontendunion">Facebook</a> and <
     </li>
 
     <li>
-      <div></div>
+      <div style="background-image: url(<%= image_path('speakers/Sergey-Zhigalov.jpg') %>);"></div>
       <h3>Three Men in a Boat. To Say Nothing of the Callback.</h3>
       <p class="speaker">Sergey Zhigalov</p>
       <p class="from"><a href="https://twitter.com/sergey_zhigalov">@sergey_zhigalov</a>, EkbJS</p>

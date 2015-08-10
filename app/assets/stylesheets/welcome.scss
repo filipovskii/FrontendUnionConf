@@ -4,8 +4,12 @@
   @include justify-content(space-between);
   @include square;
   @include minHeight;
-  padding: 50px 50px 160px;
+  // padding: 50px 50px 160px;
+
+  position: relative;
+  padding: 50px;
   font-family: 'PT Sans';
+  overflow: hidden;
 
   nav {
     @include display-flex();
@@ -53,25 +57,64 @@
     }
   }
 
+  footer {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    cursor: default;
+    @include user-select(none);
+
+    div {
+      display: inline-block;
+      @include square(15px);
+      @include border-radius(100%);
+      background-color: rgba(255,255,255,.5);
+      cursor: pointer;
+
+      &.current {
+        background-color: rgba(255,255,255,.9);
+      }
+
+      &:hover {
+        background-color: rgba(255,255,255,.8);
+      }
+    }
+  }
+
+
+
   .topicsSlider {
     @include display-flex;
 
     position: absolute;
     top: 0;
     left: 0;
-    width: 120vw;
+    width: 700vw;
     height: 100vh;
-    background-image: image-url('speakers/test.jpg');
-    background-size: cover;
-    background-position: center;
+    @include minHeight;
+
+    @include transition(all .3s ease-out);
 
     .topic {
-      margin-left: 110px;
-      font-family: 'PT Mono';
-      font-weight: bold;
-      font-size: 50px;
-      line-height: 64px;
-      color: white;
+      @include display-flex;
+      @include flex-direction(column);
+      @include justify-content(flex-end);
+
+      width: 100vw;
+      @include minHeight;
+      padding: 50px 50px 160px;
+
+      background-size: cover;
+      background-position: center;
+
+      pre {
+        margin-left: 110px;
+        font-family: 'PT Mono';
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 65px;
+        color: white;
+      }
       // white-space: pre;
 
       .name {
