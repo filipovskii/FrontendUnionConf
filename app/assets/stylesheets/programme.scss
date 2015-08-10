@@ -1,0 +1,52 @@
+#programmeSection {
+  padding: 0 105px;
+  font-family: 'PT Sans';
+
+  ul {
+    @include columns(330px 3);
+    @include column-gap(105px);
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 105px;
+
+      div {
+        width: 330px;
+        height: 186px;
+        background-image: image-url('speakers/test.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+
+      h3 {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 46px;
+        color: blue;
+      }
+
+      .speaker {
+        margin-top: 15px;
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      .from {
+        margin-top: 4px;
+        font-size: 16px;
+        color: $fromGrey;
+
+        a {
+          color: inherit;
+        }
+      }
+
+      .about {
+        margin-top: 27px;
+        font-size: 22px;
+        line-height: 32px;
+      }
+    }
+  }
+}

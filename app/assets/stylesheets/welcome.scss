@@ -1,0 +1,87 @@
+#welcomeSection {
+  @include display-flex;
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  @include square;
+  @include minHeight;
+  padding: 50px 50px 160px;
+  font-family: 'PT Sans';
+
+  nav {
+    @include display-flex();
+    @include justify-content(space-between);
+
+    position: relative;
+    z-index: 1;
+    height: 90px;
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      font-size: 22px;
+      letter-spacing: 1.74px;
+    }
+
+    .logo {
+      display: block;
+      width: 206px;
+      height: 90px;
+      background-image: image-url('logo-full.png');
+    }
+
+    aside {
+      @include display-flex();
+    }
+
+    .welcomeMenuItem {
+      padding: 0 30px;
+      background-color: rgba(255,255,255,0);
+      line-height: 92px;
+
+      &:hover {
+        background-color: rgba(255,255,255,.1);
+      }
+    }
+
+    .registrationButton {
+      height: 60px;
+      margin: 15px 30px 0;
+      padding: 0 40px;
+      line-height: 54px;
+      border: 4px solid blue;
+    }
+  }
+
+  .topicsSlider {
+    @include display-flex;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120vw;
+    height: 100vh;
+    background-image: image-url('speakers/test.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .topic {
+      margin-left: 110px;
+      font-family: 'PT Mono';
+      font-weight: bold;
+      font-size: 50px;
+      line-height: 64px;
+      color: white;
+      // white-space: pre;
+
+      .name {
+        color: blue;
+      }
+
+      .date {
+        font-size: 34px;
+        color: $dateGrey;
+      }
+    }
+  }
+}

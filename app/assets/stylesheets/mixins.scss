@@ -1,0 +1,8 @@
+@mixin square($s: 100%) {
+  width: $s;
+  height: $s;
+}
+
+@mixin minHeight() {
+  min-height: $minHeight;
+}
