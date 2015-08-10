@@ -28,7 +28,7 @@
 
       .speaker {
         margin-top: 15px;
-        font-weight: bold;
+        @include ptSansBold;
         font-size: 24px;
       }
 

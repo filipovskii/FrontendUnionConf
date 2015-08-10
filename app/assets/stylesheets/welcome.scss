@@ -11,7 +11,7 @@
   padding: 50px;
   overflow: hidden;
 
-  @include ptSans;
+  @include ptSansBold;
 
   nav {
     @include display-flex();
