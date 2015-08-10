@@ -9,7 +9,7 @@
   width: 100vw;
   @include minWidth;
   height: 90px;
-  @include ptSans;
+  @include ptSansBold;
   background-color: $menuGrey;
 
   a {
