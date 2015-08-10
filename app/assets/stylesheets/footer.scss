@@ -1,0 +1,27 @@
+#footer {
+  @include display-flex();
+  @include justify-content(space-between);
+
+  width: 100vw;
+  padding: 0 30px;
+  @include minWidth;
+  height: 45px;
+  background-color: $menuGrey;
+
+  @include ptSans;
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+
+  a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.74px;
+  }
+
+  div {
+    @include display-flex;
+    @include justify-content(space-between);
+  }
+
+}
