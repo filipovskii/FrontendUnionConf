@@ -1,11 +1,10 @@
 @import 'compass/reset';
 @import 'compass/css3';
-/*// @import 'fonts/PTM75F_stylesheet.css';*/
-/*@import 'fonts.scss';*/
 
 @import 'vars';
 @import 'mixins';
 
+@import 'fonts';
 @import 'basics';
 @import 'menubar';
 @import 'welcome';

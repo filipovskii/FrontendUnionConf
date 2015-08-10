@@ -1,6 +1,6 @@
 #programmeSection {
-  padding: 0 105px;
-  font-family: 'PT Sans';
+  padding: 0 105px 105px;
+  @include ptSans;
 
   ul {
     @include columns(330px 3);
@@ -20,7 +20,7 @@
 
       h3 {
         margin-top: 22px;
-        font-weight: bold;
+        @include ptSansBold;
         font-size: 40px;
         line-height: 46px;
         color: blue;

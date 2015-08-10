@@ -3,6 +3,26 @@
   height: $s;
 }
 
+@mixin minWidth() {
+  min-width: $minWidth;
+}
+
 @mixin minHeight() {
   min-height: $minHeight;
+}
+
+@mixin minHeightSmallScreen() {
+  min-height: $minHeightSmallScreen;
+}
+
+@mixin ptSans() {
+  font-family: 'PT Sans', 'PTSansRegular', Helvetica, Arial, sans-serif;
+}
+
+@mixin ptSansBold() {
+  font-family: 'PT Sans Bold', 'PTSansBold', Helvetica, Arial, sans-serif;
+}
+
+@mixin ptMonoBold() {
+  font-family: 'PT Mono Bold', 'PTMonoBold', 'Courier New', Courier, monospace;
 }

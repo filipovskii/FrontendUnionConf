@@ -1,36 +1,50 @@
 $ ->
+  welcomeSectionWidth = $('#welcomeSection').innerWidth()
+  currentSlide = 0
+
+  $(window).resize ->
+    welcomeSectionWidth = $('#welcomeSection').innerWidth()
+    $('#topicsWrapper').css('transform', 'translateX(-' + welcomeSectionWidth*currentSlide + 'px)')
+
   $('#slide1').on 'click', ->
+    currentSlide = 0
     $('#topicsWrapper').css('transform', 'translateX(0)')
     $('#circlesWrapper div').removeClass('current')
     $(this).addClass('current')
 
   $('#slide2').on 'click', ->
-    $('#topicsWrapper').css('transform', 'translateX(-100vw)')
+    currentSlide = 1
+    $('#topicsWrapper').css('transform', 'translateX(-' + welcomeSectionWidth*currentSlide + 'px)')
     $('#circlesWrapper div').removeClass('current')
     $(this).addClass('current')
 
   $('#slide3').on 'click', ->
-    $('#topicsWrapper').css('transform', 'translateX(-200vw)')
+    currentSlide = 2
+    $('#topicsWrapper').css('transform', 'translateX(-' + welcomeSectionWidth*currentSlide + 'px)')
     $('#circlesWrapper div').removeClass('current')
     $(this).addClass('current')
 
   $('#slide4').on 'click', ->
-    $('#topicsWrapper').css('transform', 'translateX(-300vw)')
+    currentSlide = 3
+    $('#topicsWrapper').css('transform', 'translateX(-' + welcomeSectionWidth*currentSlide + 'px)')
     $('#circlesWrapper div').removeClass('current')
     $(this).addClass('current')
 
   $('#slide5').on 'click', ->
-    $('#topicsWrapper').css('transform', 'translateX(-400vw)')
+    currentSlide = 4
+    $('#topicsWrapper').css('transform', 'translateX(-' + welcomeSectionWidth*currentSlide + 'px)')
     $('#circlesWrapper div').removeClass('current')
     $(this).addClass('current')
 
   $('#slide6').on 'click', ->
-    $('#topicsWrapper').css('transform', 'translateX(-500vw)')
+    currentSlide = 5
+    $('#topicsWrapper').css('transform', 'translateX(-' + welcomeSectionWidth*currentSlide + 'px)')
     $('#circlesWrapper div').removeClass('current')
     $(this).addClass('current')
 
   $('#slide7').on 'click', ->
-    $('#topicsWrapper').css('transform', 'translateX(-600vw)')
+    currentSlide = 6
+    $('#topicsWrapper').css('transform', 'translateX(-' + welcomeSectionWidth*currentSlide + 'px)')
     $('#circlesWrapper div').removeClass('current')
     $(this).addClass('current')
 

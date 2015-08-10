@@ -7,8 +7,9 @@
 
   z-index: 1;
   width: 100vw;
+  @include minWidth;
   height: 90px;
-  font-family: 'PT Sans';
+  @include ptSans;
   background-color: $menuGrey;
 
   a {
@@ -25,8 +26,7 @@
     @include square(90px);
     text-align: center;
     background-color: blue;
-    font-family: 'PT Mono';
-    font-weight: bold;
+    @include ptMonoBold;
 
     div {
       @include display-flex;
@@ -36,8 +36,6 @@
       font-size: 37px;
       line-height: 84px;
     }
-
-
   }
 
   aside {
