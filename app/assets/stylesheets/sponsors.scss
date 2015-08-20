@@ -1,0 +1,31 @@
+#sponsorsSection {
+  padding-bottom: 30px;
+
+  section {
+    padding-top: 100px;
+    text-align: center;
+
+    h3 {
+      margin-bottom: 40px;
+      @include ptMonoBold;
+      font-size: 20px;
+      color: #666666;
+    }
+
+    ul {
+      @include display-flex;
+      @include justify-content(center);
+
+      li {
+        @include display-flex;
+        width: 160px;
+        height: 90px;
+
+        img {
+          margin: auto;
+        }
+      }
+    }
+  }
+
+}

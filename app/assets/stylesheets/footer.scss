@@ -3,9 +3,9 @@
   @include justify-content(space-between);
 
   width: 100vw;
-  padding: 0 30px;
+  padding: 22px 30px;
   @include minWidth;
-  height: 45px;
+  height: 60px;
   background-color: $menuGrey;
 
   @include ptSansBold;
