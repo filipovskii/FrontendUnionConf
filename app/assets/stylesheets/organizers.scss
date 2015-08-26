@@ -1,0 +1,31 @@
+#organizersSection {
+  // padding-top: 100px;
+  background: $menuGrey;
+
+  h2 {
+    padding-top: 140px;
+    @include ptMonoBold;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+  }
+
+  .thanksTo {
+    padding-top: 100px;
+    @include ptMonoBold;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+    color: white;
+  }
+
+  ul {
+    li {
+      h3 { color: white; }
+      .speaker { color: white; }
+      .from { color: $fromGrey; }
+      .about {}
+    }
+  }
+}
