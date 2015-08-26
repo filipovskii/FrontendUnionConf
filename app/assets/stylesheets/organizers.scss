@@ -1,16 +1,38 @@
-#programmeSection {
+#organizersSection {
+  // padding-top: 100px;
+  background: $menuGrey;
+
+  h2 {
+    padding-top: 140px;
+    @include ptMonoBold;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+  }
+
+  .thanksTo {
+    padding-top: 100px;
+    @include ptMonoBold;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+    color: white;
+  }
+
   ul {
     li {
-      h3 { color: blue; }
-      .speaker { }
+      h3 { color: white; }
+      .speaker { color: white; }
       .from { color: $fromGrey; }
       .about {}
     }
   }
 }
 
+
 @media only screen and (max-width : 1310px) {
-  #programmeSection {
+  #organizersSection {
     padding: 0 60px 105px;
 
     ul {
@@ -21,7 +43,7 @@
 }
 
 @media only screen and (max-width : 1240px) {
-  #programmeSection {
+  #organizersSection {
     padding: 0 60px 105px;
 
     ul {
@@ -39,12 +61,12 @@
 }
 
 @media only screen and (max-width : 1180px) {
-  #programmeSection {
+  #organizersSection {
     padding: 0 60px 105px;
 
     ul {
       @include columns(300px 3);
-      @include column-gap(40px);
+      @include column-gap(0px);
 
       li {
         div {
@@ -57,12 +79,12 @@
 }
 
 @media only screen and (max-width : 1100px) {
-  #programmeSection {
-    padding: 0 123px 105px;
+  #organizersSection {
+    padding: 0 20px 105px;
 
     ul {
-      @include columns(300px 2);
-      @include column-gap(150px);
+      @include columns(300px 3);
+      @include column-gap(20px);
 
       li {
         div {
