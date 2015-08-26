@@ -8,3 +8,68 @@
     }
   }
 }
+
+@media only screen and (max-width : 1310px) {
+  #programmeSection {
+    padding: 0 60px 105px;
+
+    ul {
+      @include columns(330px 3);
+      @include column-gap(60px);
+    }
+  }
+}
+
+@media only screen and (max-width : 1240px) {
+  #programmeSection {
+    padding: 0 60px 105px;
+
+    ul {
+      @include columns(300px 3);
+      @include column-gap(40px);
+
+      li {
+        div {
+          width: 300px;
+          height: 169px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 1180px) {
+  #programmeSection {
+    padding: 0 60px 105px;
+
+    ul {
+      @include columns(300px 3);
+      @include column-gap(40px);
+
+      li {
+        div {
+          width: 300px;
+          height: 169px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 1100px) {
+  #programmeSection {
+    padding: 0 123px 105px;
+
+    ul {
+      @include columns(300px 2);
+      @include column-gap(150px);
+
+      li {
+        div {
+          width: 300px;
+          height: 169px;
+        }
+      }
+    }
+  }
+}

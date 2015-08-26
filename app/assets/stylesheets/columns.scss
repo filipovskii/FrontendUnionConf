@@ -1,10 +1,10 @@
 .columnsView {
-  padding: 0 105px 105px;
+  padding: 0 80px 105px;
   @include ptSans;
 
   ul {
     @include columns(330px 3);
-    @include column-gap(105px);
+    @include column-gap(80px);
 
     li {
       display: inline-block;
@@ -53,3 +53,68 @@
     }
   }
 }
+//
+// @media only screen and (max-width : 1310px) {
+//   .columnsView {
+//     padding: 0 60px 105px;
+//
+//     ul {
+//       @include columns(330px 3);
+//       @include column-gap(60px);
+//     }
+//   }
+// }
+//
+// @media only screen and (max-width : 1240px) {
+//   .columnsView {
+//     padding: 0 60px 105px;
+//
+//     ul {
+//       @include columns(300px 3);
+//       @include column-gap(40px);
+//
+//       li {
+//         div {
+//           width: 300px;
+//           height: 169px;
+//         }
+//       }
+//     }
+//   }
+// }
+//
+// @media only screen and (max-width : 1180px) {
+//   .columnsView {
+//     padding: 0 60px 105px;
+//
+//     ul {
+//       @include columns(300px 3);
+//       @include column-gap(0px);
+//
+//       li {
+//         div {
+//           width: 300px;
+//           height: 169px;
+//         }
+//       }
+//     }
+//   }
+// }
+//
+// @media only screen and (max-width : 1100px) {
+//   .columnsView {
+//     padding: 0 20px 105px;
+//
+//     ul {
+//       @include columns(300px 3);
+//       @include column-gap(20px);
+//
+//       li {
+//         div {
+//           width: 300px;
+//           height: 169px;
+//         }
+//       }
+//     }
+//   }
+// }
