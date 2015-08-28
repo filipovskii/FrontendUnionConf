@@ -1,0 +1,74 @@
+#scheduleSection {
+  padding: 100px;
+
+  section {
+    @include display-flex;
+    @include justify-content(space-between);
+
+    p {
+      @include ptMonoBold;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 48px;
+
+      span {
+        display: block;
+        width: 540px;
+        padding-left: 40px;
+      }
+    }
+  }
+
+  footer {
+    padding-top: 100px;
+
+    h3 {
+      @include ptMonoBold;
+      font-size: 20px;
+      color: #666666;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width : 1366px) {
+
+  #scheduleSection {
+    section {
+      width: 1050px;
+      margin: 0 auto;
+
+      p {
+        font-size: 22px;
+        line-height: 33px;
+
+        span {
+          width: 440px;
+          padding-left: 30px;
+        }
+      }
+    }
+
+    footer {
+      h3 {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 1240px) {
+  #scheduleSection {
+    section {
+      // display: block;
+      width: auto;
+      margin: 0 auto;
+
+      p {
+        span {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
