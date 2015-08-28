@@ -18,6 +18,14 @@
     line-height: 48px;
     text-align: center;
     color: white;
+
+    a {
+      color: white;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   ul {
