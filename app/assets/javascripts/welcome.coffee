@@ -1,52 +1,36 @@
 $ ->
-  welcomeSectionWidth = $('#welcomeSection').innerWidth()
   currentSlide = 0
+  welcomeSectionWidth = $('#welcomeSection').innerWidth()
+
+  slide = (button, currentSlide) ->
+    $('#topicsWrapper').css('transform', 'translateX(-' + welcomeSectionWidth*currentSlide + 'px)')
+    $('#circlesWrapper div').removeClass('current')
+    $(button).addClass('current')
 
   $(window).resize ->
     welcomeSectionWidth = $('#welcomeSection').innerWidth()
     $('#topicsWrapper').css('transform', 'translateX(-' + welcomeSectionWidth*currentSlide + 'px)')
 
   $('#slide1').on 'click', ->
-    currentSlide = 0
-    $('#topicsWrapper').css('transform', 'translateX(0)')
-    $('#circlesWrapper div').removeClass('current')
-    $(this).addClass('current')
+    slide(this, 0)
 
   $('#slide2').on 'click', ->
-    currentSlide = 1
-    $('#topicsWrapper').css('transform', 'translateX(-' + welcomeSectionWidth*currentSlide + 'px)')
-    $('#circlesWrapper div').removeClass('current')
-    $(this).addClass('current')
+    slide(this, 1)
 
   $('#slide3').on 'click', ->
-    currentSlide = 2
-    $('#topicsWrapper').css('transform', 'translateX(-' + welcomeSectionWidth*currentSlide + 'px)')
-    $('#circlesWrapper div').removeClass('current')
-    $(this).addClass('current')
+    slide(this, 2)
 
   $('#slide4').on 'click', ->
-    currentSlide = 3
-    $('#topicsWrapper').css('transform', 'translateX(-' + welcomeSectionWidth*currentSlide + 'px)')
-    $('#circlesWrapper div').removeClass('current')
-    $(this).addClass('current')
+    slide(this, 3)
 
   $('#slide5').on 'click', ->
-    currentSlide = 4
-    $('#topicsWrapper').css('transform', 'translateX(-' + welcomeSectionWidth*currentSlide + 'px)')
-    $('#circlesWrapper div').removeClass('current')
-    $(this).addClass('current')
+    slide(this, 4)
 
   $('#slide6').on 'click', ->
-    currentSlide = 5
-    $('#topicsWrapper').css('transform', 'translateX(-' + welcomeSectionWidth*currentSlide + 'px)')
-    $('#circlesWrapper div').removeClass('current')
-    $(this).addClass('current')
+    slide(this, 5)
 
   $('#slide7').on 'click', ->
-    currentSlide = 6
-    $('#topicsWrapper').css('transform', 'translateX(-' + welcomeSectionWidth*currentSlide + 'px)')
-    $('#circlesWrapper div').removeClass('current')
-    $(this).addClass('current')
+    slide(this, 6)
 
   $('.scrollTo').each ->
     $(this).on 'click', (e) ->
@@ -57,3 +41,6 @@ $ ->
       $('html,body').animate
         scrollTop: $(scrollTo).offset().top
       , 1000
+
+
+  slide($('#circlesWrapper div')[currentSlide], currentSlide)
