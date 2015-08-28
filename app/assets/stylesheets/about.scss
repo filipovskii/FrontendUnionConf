@@ -1,5 +1,6 @@
 #aboutSection,
-#locationSection {
+#locationSection,
+#scheduleSection {
   @include display-flex;
   @include flex-direction(column);
   @include justify-content(center);
@@ -26,9 +27,24 @@
   background-color: $menuGrey;
 }
 
+#scheduleSection {
+  background-color: $white;
+  color: $black;
+  height: auto;
+  @include display-flex;
+  @include flex-direction(row);
+  @include justify-content(space-around);
+
+  pre {
+    width: 50%;
+  }
+
+}
+
 @media only screen and (max-width : 1366px) {
   #aboutSection,
-  #locationSection {
+  #locationSection,
+  #scheduleSection {
     @include minHeightSmallScreen;
     padding: 30px 30px 30px 70px;
 
