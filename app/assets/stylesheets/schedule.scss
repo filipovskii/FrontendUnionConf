@@ -5,16 +5,18 @@
     @include display-flex;
     @include justify-content(space-between);
 
-    p {
+    article {
       @include ptMonoBold;
       font-weight: bold;
       font-size: 32px;
       line-height: 48px;
 
-      span {
-        display: block;
+      div {
         width: 540px;
         padding-left: 40px;
+
+        .blue { color: blue; }
+        .grey { color: #666666; }
       }
     }
   }
@@ -27,6 +29,14 @@
       font-size: 20px;
       color: #666666;
       text-align: center;
+
+      a {
+        color: #666666;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
   }
 }
@@ -38,11 +48,11 @@
       width: 1050px;
       margin: 0 auto;
 
-      p {
+      article {
         font-size: 22px;
         line-height: 33px;
 
-        span {
+        div {
           width: 440px;
           padding-left: 30px;
         }
@@ -60,12 +70,11 @@
 @media only screen and (max-width : 1240px) {
   #scheduleSection {
     section {
-      // display: block;
       width: auto;
       margin: 0 auto;
 
-      p {
-        span {
+      article {
+        div {
           width: 300px;
         }
       }
