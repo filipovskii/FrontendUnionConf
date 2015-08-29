@@ -1,5 +1,5 @@
 $ ->
-  currentSlide = 4
+  currentSlide = 5
   welcomeSectionWidth = $('#welcomeSection').innerWidth()
 
   slide = (button, currentSlide) ->
