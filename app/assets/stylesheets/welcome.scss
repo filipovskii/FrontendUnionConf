@@ -120,12 +120,14 @@
       }
 
       .date,
-      .time {
+      .time,
+      .separator {
         font-size: 34px;
         color: $dateGrey;
       }
 
-      .date {
+      .date,
+      .separator {
         display: none;
       }
     }
